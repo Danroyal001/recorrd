@@ -1,1 +1,1 @@
-class UserAccountModel { }
+class UserAccountModel {}

@@ -1,1 +1,1 @@
-class PremiumPlanComparisonModel { }
+class PremiumPlanComparisonModel {}
