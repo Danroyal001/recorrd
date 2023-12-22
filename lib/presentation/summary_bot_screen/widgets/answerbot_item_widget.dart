@@ -1,4 +1,4 @@
-import '../controller/answer_bot_controller.dart';
+import '../controller/summary_bot_controller.dart';
 import '../models/answerbot_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:recorrd/core/app_export.dart';
@@ -10,7 +10,7 @@ class AnswerbotItemWidget extends StatelessWidget {
 
   AnswerbotItemModel answerbotItemModelObj;
 
-  var controller = Get.find<AnswerBotController>();
+  var controller = Get.find<SummaryBotController>();
 
   @override
   Widget build(BuildContext context) {
