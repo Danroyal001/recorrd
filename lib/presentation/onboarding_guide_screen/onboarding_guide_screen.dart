@@ -52,7 +52,7 @@ class OnboardingGuideScreen extends GetWidget<OnboardingGuideController> {
                   "msg_get_your_business".tr,
                   maxLines: null,
                   textAlign: TextAlign.center,
-                  style: AppStyle.txtGilroyMedium18Bluegray400,
+                  style: AppStyle.txtGilroyMedium18,
                 ),
               ),
               Container(

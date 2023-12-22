@@ -1,1 +1,1 @@
-class TwoFactorAuthenticationModel { }
+class TwoFactorAuthenticationModel {}

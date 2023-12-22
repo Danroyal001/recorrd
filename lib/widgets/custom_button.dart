@@ -307,6 +307,7 @@ enum ButtonShape {
   CircleBorder23,
   RoundedBorder16,
 }
+
 enum ButtonPadding {
   PaddingAll14,
   PaddingAll8,
@@ -314,6 +315,7 @@ enum ButtonPadding {
   PaddingAll3,
   PaddingT12,
 }
+
 enum ButtonVariant {
   FillBlueA700,
   OutlineBlueA700,
@@ -326,6 +328,7 @@ enum ButtonVariant {
   FillBluegray50,
   FillBlue50,
 }
+
 enum ButtonFontStyle {
   GilroyMedium16,
   GilroyMedium14,

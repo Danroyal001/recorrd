@@ -1,1 +1,1 @@
-class PasswordStrengthModel { }
+class PasswordStrengthModel {}

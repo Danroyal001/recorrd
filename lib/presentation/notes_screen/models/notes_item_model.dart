@@ -1,9 +1,12 @@
-import 'package:get/get.dart';class NotesItemModel {Rx<String> aprCounterTxt = Rx("20 APR");
+import 'package:get/get.dart';
 
-Rx<String> explorationideasTxt = Rx("Exploration ideas");
+class NotesItemModel {
+  Rx<String> aprCounterTxt = Rx("20 APR");
 
-Rx<String> descriptionTxt = Rx("Ticket App\nTravel Website\nDigital marketing\nWebsite....");
+  Rx<String> explorationideasTxt = Rx("Exploration ideas");
 
-Rx<String>? id = Rx("");
+  Rx<String> descriptionTxt =
+      Rx("Ticket App\nTravel Website\nDigital marketing\nWebsite....");
 
- }
+  Rx<String>? id = Rx("");
+}

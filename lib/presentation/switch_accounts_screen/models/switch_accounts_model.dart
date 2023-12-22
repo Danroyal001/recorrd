@@ -1,1 +1,1 @@
-class SwitchAccountsModel { }
+class SwitchAccountsModel {}

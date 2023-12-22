@@ -1,15 +1,32 @@
-import 'package:recorrd/core/app_export.dart';import 'package:recorrd/presentation/edit_profile_screen/models/edit_profile_model.dart';import 'package:flutter/material.dart';class EditProfileController extends GetxController {TextEditingController group10198Controller = TextEditingController();
+import 'package:recorrd/core/app_export.dart';
+import 'package:recorrd/presentation/edit_profile_screen/models/edit_profile_model.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController group10198OneController = TextEditingController();
+class EditProfileController extends GetxController {
+  TextEditingController group10198Controller = TextEditingController();
 
-TextEditingController emailController = TextEditingController();
+  TextEditingController group10198OneController = TextEditingController();
 
-TextEditingController weburlController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
 
-TextEditingController mobileNoController = TextEditingController();
+  TextEditingController weburlController = TextEditingController();
 
-Rx<EditProfileModel> editProfileModelObj = EditProfileModel().obs;
+  TextEditingController mobileNoController = TextEditingController();
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); group10198Controller.dispose(); group10198OneController.dispose(); emailController.dispose(); weburlController.dispose(); mobileNoController.dispose(); } 
- }
+  Rx<EditProfileModel> editProfileModelObj = EditProfileModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    group10198Controller.dispose();
+    group10198OneController.dispose();
+    emailController.dispose();
+    weburlController.dispose();
+    mobileNoController.dispose();
+  }
+}

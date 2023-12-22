@@ -1,1 +1,1 @@
-class OnboardingGuideModel { }
+class OnboardingGuideModel {}

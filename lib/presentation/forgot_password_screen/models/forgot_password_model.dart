@@ -1,1 +1,1 @@
-class ForgotPasswordModel { }
+class ForgotPasswordModel {}
