@@ -1,7 +1,7 @@
 import 'package:recorrd/presentation/meeting_scheduling_screen/meeting_scheduling_screen.dart';
 import 'package:recorrd/presentation/meeting_scheduling_screen/binding/meeting_scheduling_binding.dart';
-import 'package:recorrd/presentation/answer_bot_screen/answer_bot_screen.dart';
-import 'package:recorrd/presentation/answer_bot_screen/binding/answer_bot_binding.dart';
+import 'package:recorrd/presentation/summary_bot_screen/summary_bot_screen.dart';
+import 'package:recorrd/presentation/summary_bot_screen/binding/summary_bot_binding.dart';
 import 'package:recorrd/presentation/notifications_screen/notifications_screen.dart';
 import 'package:recorrd/presentation/notifications_screen/binding/notifications_binding.dart';
 import 'package:recorrd/presentation/recording_history_screen/recording_history_screen.dart';
@@ -47,7 +47,7 @@ import 'package:get/get.dart';
 class AppRoutes {
   static const String meetingSchedulingScreen = '/meeting_scheduling_screen';
 
-  static const String answerBotScreen = '/answer_bot_screen';
+  static const String summaryBotScreen = '/summary_bot_screen';
 
   static const String notificationsScreen = '/notifications_screen';
 
@@ -103,10 +103,10 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: answerBotScreen,
-      page: () => AnswerBotScreen(),
+      name: summaryBotScreen,
+      page: () => SummaryBotScreen(),
       bindings: [
-        AnswerBotBinding(),
+        SummaryBotBinding(),
       ],
     ),
     GetPage(

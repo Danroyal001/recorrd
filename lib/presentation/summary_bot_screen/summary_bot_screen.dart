@@ -1,5 +1,5 @@
-import '../answer_bot_screen/widgets/answerbot_item_widget.dart';
-import 'controller/answer_bot_controller.dart';
+import '../summary_bot_screen/widgets/answerbot_item_widget.dart';
+import 'controller/summary_bot_controller.dart';
 import 'models/answerbot_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:recorrd/core/app_export.dart';
@@ -8,7 +8,7 @@ import 'package:recorrd/widgets/app_bar/appbar_title.dart';
 import 'package:recorrd/widgets/app_bar/custom_app_bar.dart';
 import 'package:recorrd/widgets/custom_icon_button.dart';
 
-class AnswerBotScreen extends GetWidget<AnswerBotController> {
+class SummaryBotScreen extends GetWidget<SummaryBotController> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -160,11 +160,11 @@ class AnswerBotScreen extends GetWidget<AnswerBotController> {
                               separatorBuilder: (context, index) {
                                 return SizedBox(height: getVerticalSize(8));
                               },
-                              itemCount: controller.answerBotModelObj.value
+                              itemCount: controller.summaryBotModelObj.value
                                   .answerbotItemList.value.length,
                               itemBuilder: (context, index) {
                                 AnswerbotItemModel model = controller
-                                    .answerBotModelObj
+                                    .summaryBotModelObj
                                     .value
                                     .answerbotItemList
                                     .value[index];

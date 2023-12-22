@@ -105,7 +105,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                     ]))),
                                         GestureDetector(
                                             onTap: () {
-                                              onTapAnswerBot();
+                                              onTapSummaryBot();
                                             },
                                             child: Container(
                                                 decoration:
@@ -126,7 +126,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                                                       bottom:
                                                                           10),
                                                               child: Text(
-                                                                  "lbl_answer_bot"
+                                                                  "lbl_summary_bot"
                                                                       .tr,
                                                                   overflow:
                                                                       TextOverflow
@@ -1079,9 +1079,9 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
     );
   }
 
-  onTapAnswerBot() {
+  onTapSummaryBot() {
     Get.toNamed(
-      AppRoutes.answerBotScreen,
+      AppRoutes.summaryBotScreen,
     );
   }
 
