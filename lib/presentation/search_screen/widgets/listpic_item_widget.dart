@@ -1,4 +1,4 @@
-import '../controller/search_controller.dart';
+import '../controller/search_controller.dart' as search_controller;
 import '../models/listpic_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:recorrd/core/app_export.dart';
@@ -9,7 +9,7 @@ class ListpicItemWidget extends StatelessWidget {
 
   ListpicItemModel listpicItemModelObj;
 
-  var controller = Get.find<SearchController>();
+  var controller = Get.find<search_controller.SearchController>();
 
   @override
   Widget build(BuildContext context) {

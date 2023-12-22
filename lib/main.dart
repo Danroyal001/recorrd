@@ -4,17 +4,19 @@ import 'package:flutter/services.dart';
 
 import 'core/app_export.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Future.wait([
+
+  await Future.wait([
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]),
+    
     PrefUtils().init()
-  ]).then((value) {
-    Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
-    runApp(MyApp());
-  });
+  ]);
+
+  Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

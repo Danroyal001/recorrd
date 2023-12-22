@@ -1,6 +1,6 @@
 import '../search_screen/widgets/listclose_item_widget.dart';
 import '../search_screen/widgets/listpic_item_widget.dart';
-import 'controller/search_controller.dart';
+import 'controller/search_controller.dart' as search_controller;
 import 'models/listclose_item_model.dart';
 import 'models/listpic_item_model.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +10,7 @@ import 'package:recorrd/widgets/app_bar/appbar_title.dart';
 import 'package:recorrd/widgets/app_bar/custom_app_bar.dart';
 import 'package:recorrd/widgets/custom_search_view.dart';
 
-class SearchScreen extends GetWidget<SearchController> {
+class SearchScreen extends GetWidget<search_controller.SearchController> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
