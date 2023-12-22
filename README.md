@@ -1,16 +1,21 @@
 
 # recorrd
+
+Professional Audio/Video recording and transcribtion
+
 ### Table of contents
-- [System requirements](#system-requirements)
-- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
-- [Check the UI of the entire app](#app-navigations)
-- [Facebook authentication configuration](#facebook-authentication-configuration)
-- [Google authentication configuration](#google-authentication-configuration)
-- [Application structure](#project-structure)
-- [How to format your code?](#how-you-can-do-code-formatting)
-- [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
-- [Libraries and tools used](#libraries-and-tools-used)
-- [Support](#support)
+- [recorrd](#recorrd)
+    - [Table of contents](#table-of-contents)
+    - [System requirements](#system-requirements)
+    - [Figma design guidelines for better UI accuracy](#figma-design-guidelines-for-better-ui-accuracy)
+    - [Check the UI of the entire app](#check-the-ui-of-the-entire-app)
+    - [Facebook authentication configuration](#facebook-authentication-configuration)
+    - [Google authentication configuration](#google-authentication-configuration)
+    - [Application structure](#application-structure)
+    - [How to format your code?](#how-to-format-your-code)
+    - [How you can improve code readability?](#how-you-can-improve-code-readability)
+    - [Libraries and tools used](#libraries-and-tools-used)
+    - [Support](#support)
 
 ### System requirements
 
