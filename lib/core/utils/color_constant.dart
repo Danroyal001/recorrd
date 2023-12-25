@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:recorrd/core/constants/int_constants.dart';
 
 class ColorConstant {
+  static Color primaryColor = Color(IntConstants.primaryPurpleInt);
+
   static Color black9007f = fromHex('#7f000000');
 
   static Color gray5001 = fromHex('#fafcff');

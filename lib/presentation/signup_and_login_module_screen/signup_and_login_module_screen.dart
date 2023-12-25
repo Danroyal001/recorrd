@@ -212,7 +212,7 @@ class SignupAndLoginModuleScreen
                                   child: RichText(
                                       text: TextSpan(children: [
                                         TextSpan(
-                                            text: "Don’t have an account? ".tr,
+                                            text: "Don't have an account? ".tr,
                                             style: TextStyle(
                                                 color: ColorConstant.fromHex(
                                                     "#ff12282a"),

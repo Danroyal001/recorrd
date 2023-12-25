@@ -115,7 +115,7 @@ class TwoFactorAuthenticationScreen
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: "Didn’t Recieved Code ?".tr,
+                        text: "Didn't Recieved Code ?".tr,
                         style: TextStyle(
                           color: ColorConstant.fromHex("#ff74839d"),
                           fontSize: getFontSize(

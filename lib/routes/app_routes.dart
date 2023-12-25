@@ -92,7 +92,8 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
-  static const String initialRoute = '/initialRoute';
+  // static const String initialRoute = '/initialRoute';
+  static const String initialRoute = splashScreen;
 
   static List<GetPage> pages = [
     GetPage(

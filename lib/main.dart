@@ -12,6 +12,9 @@ import 'firebase_options.dart';
 // App utilities
 import 'core/app_export.dart';
 
+// Extras
+import 'package:swatcher/swatcher.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -34,10 +37,10 @@ void main() async {
   ]);
 
   Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
-  runApp(MyApp());
+  runApp(RecorrdProApp());
 }
 
-class MyApp extends StatelessWidget {
+class RecorrdProApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -45,12 +48,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
+        primaryColor: ColorConstant.primaryColor,
+        primarySwatch: Swatcher.createMaterialColor(ColorConstant.primaryColor),
       ),
       translations: AppLocalization(),
       locale: Get.deviceLocale,
       //for setting localization strings
       fallbackLocale: const Locale('en', 'US'),
-      title: 'recorrd',
+      title: StringConstants.appShortName,
       initialBinding: InitialBindings(),
       initialRoute: AppRoutes.initialRoute,
       getPages: AppRoutes.pages,
