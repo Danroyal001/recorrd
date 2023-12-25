@@ -1,18 +1,36 @@
+// Flutter code imports
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+// Firebase imports
+import 'package:firebase_core/firebase_core.dart';
+import 'package:recorrd/core/constants/int_constants.dart';
+import 'package:recorrd/core/constants/string_constants.dart';
+import 'firebase_options.dart';
+
+// App utilities
 import 'core/app_export.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   await Future.wait([
+    // Set device orientation
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]),
-    
-    PrefUtils().init()
+    // Set description and color in "Recent apps"
+    SystemChrome.setApplicationSwitcherDescription(
+        ApplicationSwitcherDescription(
+            label: StringConstants.appShortName,
+            primaryColor: IntConstants.primaryPurpleInt)),
+    // Initialize shared preferences
+    PrefUtils().init(),
   ]);
 
   Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);

@@ -8,7 +8,7 @@
 PRODUCT_NAME = recorrd
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.recorrd.recorrd
+PRODUCT_BUNDLE_IDENTIFIER = pro.recorrd.app.recorrd
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 com.recorrd. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2023 pro.recorrd.app. All rights reserved.

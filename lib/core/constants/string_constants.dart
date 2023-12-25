@@ -1,4 +1,4 @@
-class StringConstants {
+abstract class StringConstants {
   static String appFullName = "Recorrd Pro";
 
   static String appShortName = "Recorrd";
