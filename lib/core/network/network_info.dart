@@ -22,11 +22,13 @@ class NetworkInfo implements NetworkInfoI {
   /// otherwise it returns `false`.
   @override
   Future<bool> isConnected() async {
-    final result = await connectivity.checkConnectivity();
-    if (result != ConnectivityResult.none) {
-      return true;
-    }
-    return false;
+    // final result = await connectivity.checkConnectivity();
+    // if (result != ConnectivityResult.none) {
+    //   return true;
+    // }
+    // return false;
+
+    return ConnectivityResult.none != (await connectivity.checkConnectivity());
   }
 
   /// To check type of internet connectivity
